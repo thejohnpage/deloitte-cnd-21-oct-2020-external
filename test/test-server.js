@@ -2,8 +2,8 @@ const chai = require('chai');
 const nock = require('nock');
 const request = require('supertest');
 const app = require('../server');
-
 describe('GET /', function () {
+    /*
   it('responds with home page', function (done) {
 
     //specify the url to be intercepted
@@ -30,10 +30,8 @@ describe('GET /', function () {
         chai.assert.isTrue(res.text.includes("<h1>Welcome to Obi Wan's application</h1>"));
         return done();
       });
-
-
   });
-
+*/
 
   it('should display page when the backend is down', function (done) {
     //specify the url to be intercepted
@@ -89,8 +87,6 @@ describe('POST /event', function () {
         chai.assert.isTrue(res.text.includes("Redirecting"));
         return done();
       });
-
-
   });
 });
 
